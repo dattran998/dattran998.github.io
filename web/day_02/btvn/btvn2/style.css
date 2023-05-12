@@ -1,0 +1,26 @@
+.footer {
+    background-color: #30598c;
+    width: 35%;
+}
+
+.box {
+    padding: 28px 48px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+h4 {
+    padding: 0;
+    font-size: 18px;
+}
+
+p {
+    font-size: 14px;
+    padding-top: 10px;
+}
