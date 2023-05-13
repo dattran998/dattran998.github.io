@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+.footer {
+    width: 390px;
+    background-color: #30598c;
+    color: #fff;
+    padding: 48px 45px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer h2 {
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 400;
+}
+
+.footer a,
+.footer p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.footer .row {
+    margin-bottom: 16px;
+}
+
+.social li {
+    display: inline-block;
+    margin: 0 24px;
+}
+
+.social ul {
+    text-align: center;
+    margin-top: -4px;
+}
+
+.social li i {
+    font-size: 28px;
+}
