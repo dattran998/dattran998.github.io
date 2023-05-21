@@ -57,11 +57,17 @@ ul {
     list-style-type: none;
 }
 
+.menu >ul >li:hover,
+.menu >ul >li >a:hover {
+    color: #919294;
+}
+
 .menu ul li {
     /* font-weight: 500; */
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin-right: 24px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .header .logo img {
@@ -75,8 +81,18 @@ ul {
     position: relative;
 }
 
+/* .cart span {
+    cursor: pointer;
+}
+
+.cart span i {
+    cursor: pointer;
+} */
+
+
 .cart-icon {
     font-size: 20px;
+    cursor: pointer;
 }
 
 .cart-count {
@@ -90,10 +106,12 @@ ul {
     position: absolute;
     top: -14px;
     left: 20px;
+    
 }
 
 .avatar {
     margin-left: 36px;
+    cursor: pointer;
 }
 
 .avatar img {
@@ -267,7 +285,7 @@ html {
     /* width: 390px; */
     background-color: #30598c;
     color: #fff;
-    padding: 48px 167px;
+    padding: 48px 100px;
 
     
 }
@@ -300,14 +318,14 @@ a {
 }
 
 .footer h2 {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 35px;
     font-weight: 400;
 }
 
 .footer a,
 .footer p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 35px;
 }
@@ -331,4 +349,47 @@ a {
 
 .social li i {
     font-size: 28px;
+}
+
+/* Sub-Menu */
+ul.sub-menu {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.15);
+    border-radius: 4px;
+    top: 66px;
+    right: 142px;
+    width: 200px;
+    
+}
+
+.sub-menu li:hover a {
+    color: #fff;
+}
+
+.sub-menu li:hover{
+    
+    background-color: #ccc;
+}
+
+.sub-menu li {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 0!important;
+    padding: 1rem;
+    text-align: center;
+    text-transform: none;
+    width: 100%;
+}
+
+.sub-menu a {
+    color: #000;
+}
+
+.menu li:last-child:hover .sub-menu {
+    display: flex;
 }
