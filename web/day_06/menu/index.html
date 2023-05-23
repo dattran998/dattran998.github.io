@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-container">
+            <div class="header-inner">
+                <div class="logo">
+                    <img src="https://techmaster.vn/resources/image/logo-techmaster/white/white_200x74.png" alt="">
+                </div>
+
+                <div class="sidebar">
+                    <div class="menu">
+                        <ul class="main-menu">
+                            <li class="menu-item">KHÓA HỌC
+                                <span class="ml-4">
+                                    <i class="fa-solid fa-caret-down"></i>
+                                </span>
+                            </li>
+                            <li class="menu-item"><a href="https://techmaster.vn/san-pham-hoc-vien?page=1">SẢN PHẨM HỌC VIÊN</a> </li>
+                            <li class="menu-item"><a href="https://techmaster.vn/trungtam/lich-khai-giang">KHAI GIẢNG</a> </li>
+                            <li class="menu-item"><a href="https://techmaster.vn/posts">BLOG</a> </li>
+                            <li class="menu-item"><a href="https://techmaster.vn/trai-nghiem">TRẢI NGHIỆM</a> </li>
+                            <li class="menu-item">CHÚNG TÔI
+                                <span class="ml-4"><i class="fa-solid fa-caret-down"></i></span>
+
+                                <ul class="sub-menu">
+                                    <li class="sub-menu-item"><a href="">Trung tâm</a></li>
+                                    <li class="sub-menu-item"><a href="">Quy định chung</a></li>
+                                    <li class="sub-menu-item"><a href="">Giảng viên</a></li>
+                                    <li class="sub-menu-item"><a href="">Hướng dẫn đăng ký học</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="cart">
+                        <span class="cart-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </span>
+
+                        <span class="cart-count">
+                            0
+                        </span>
+
+                    </div>
+
+                    <div class="avatar">
+                        <img src="	https://techmaster.vn/resources/image/anonymous-user.jpg
+                        " alt="">
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="body-part">
+        <div class="body-container">
+            <div class="row">
+                <div class="topic">
+                    <div class="topic-content">
+                        <div class="sticky">
+                            <div class="mb-24 fiter-field">
+                                <p  class="mb-16 subjectTitle">
+                                    Chủ đề
+                                </p>
+
+                                <div class="mb-16 md-radio">
+                                    <input type="radio" id="basis-course" name="subject-title">
+                                    <label for="basis-course">Khóa học căn bản</label>
+                                </div>
+
+                                <div class="mb-16 md-radio">
+                                    <input type="radio" id="training" name="subject-title">
+                                    <label for="training">Luyện thi FE</label>
+                                </div>
+
+                                <div class="mb-16 md-radio" >
+                                    <input type="radio" id="web" name="subject-title">
+                                    <label for="web">Web frontend</label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="body-content">
+                    <div class="content">
+                        <div class="mb-24 list-search">
+                            <input class="form-control" placeholder="Tìm kiếm khóa học" type="text">
+
+                            <i class="search-icon fa-solid fa-magnifying-glass"></i>
+                           
+                        </div>
+
+                        <div class="list-courses">
+                            <div class="container">
+                                <div class="row row-wrap">
+                                    <div class="car-item">
+                                        <a href="data_struture.html">
+
+                                            <div class="card">
+                                                <div class="car-image">
+                                                    <img src="https://techmaster.vn/resources/image/thumbnail.jpg" alt="data structure">
+                                                </div>
+                                                <div class="card-content">
+                                                    <h2>
+                                                        Data Structure - Algorithm - LeetCode
+                                                    </h2>
+                                                    <div>
+                            
+                                                        <p>
+                                                            Trực tuyến
+                                                        </p>
+                                            
+                                                        <p>
+                                                            5
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="car-item">
+                                        <a href="fe.html">
+
+                                            <div class="card">
+                                                <div class="car-image">
+                                                    <img src="https://media.techmaster.vn/api/static/36/uhWHezPC" alt="luyện thi fe">
+                                                </div>
+                                                <div class="card-content">
+                                                    <h2>
+                                                        Luyện thi FE
+                                                    </h2>
+                                                    
+                                                    <div>
+                            
+                                                        <p>
+                                                            Trực tuyến
+                                                        </p>
+                                            
+                                                        <p>
+                                                            5
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="car-item">
+                                        <a href="java.html">
+
+                                            <div class="card">
+                                                <div class="car-image">
+                                                    <img src="https://media.techmaster.vn/api/fileman/Uploads/Java/banner-javabasic.png" alt="java">
+                                                </div>
+                                                <div class="card-content">
+                                                    <h2>
+                                                        Học lập trình Java trực tuyến
+                                                    </h2>
+                                                    
+                                                    <div>
+                            
+                                                        <p>
+                                                            Trực tuyến
+                                                        </p>
+                                            
+                                                        <p>
+                                                            5
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="car-item">
+                                        <a href="https://techmaster.vn/course-detail/2l6/lap-trinh-web-voi-spring-boot-online">
+                                            
+                                            <div class="card">
+                                                <div class="car-image">
+                                                    <img src="https://media.techmaster.vn/api/static/8028/bpfneoc51co8tcg6lek0" alt="springboot">
+                                                </div>
+                                                <div class="card-content">
+                                                    <h2>
+                                                        Lập trình web với Spring Boot online
+                                                    </h2>
+                                                    <div>
+                            
+                                                        <p>
+                                                            Trực tuyến
+                                                        </p>
+                                            
+                                                        <p>
+                                                            5
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                        </p>
+                                                    </div>
+                            
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="car-item">
+                                        <a href="https://techmaster.vn/course-detail/25528/nhap-mon-lap-trinh-giai-thuat-co-ban">
+
+                                            <div class="card">
+                                                <div class="car-image">
+                                                    <img src="https://media.techmaster.vn/api/fileman/Uploads/users/5463/giaithuat-thumnail.png" alt="lập trình giải thuật">
+                                                </div>
+                                                <div class="card-content">
+                                                    <h2>
+                                                        Nhập môn lập trình giải thuật cơ bản
+                                                    </h2>
+                                                    <div>
+                            
+                                                        <p>
+                                                            Trực tuyến
+                                                        </p>
+                                            
+                                                        <p>
+                                                            5
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="car-item">
+                                        <a href="https://techmaster.vn/course-detail/xxd/lap-trinh-di-dong-ios-swift-online">
+
+                                            <div class="card">
+                                                <div class="car-image">
+                                                    <img src="https://media.techmaster.vn/api/static/8028/bqa348s51cocm3n1ubq0" alt="ios swift">
+                                                </div>
+                                                <div class="card-content">
+                                                    <h2>
+                                                        Lập trình di động IOS Swift online
+                                                    </h2>
+                                                    <div>
+                            
+                                                        <p>
+                                                            Trực tuyến
+                                                        </p>
+                                            
+                                                        <p>
+                                                            5
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="car-item">
+                                        <a href="https://techmaster.vn/course-detail/oaf/lap-trinh-nodejs-cap-nhat-2022">
+
+                                            <div class="card">
+                                                <div class="car-image">
+                                                    <img src="https://media.techmaster.vn/api/static/bub3enc51co7s932dsk0/6PyUoB-T" alt="nodejs">
+                                                </div>
+                                                <div class="card-content">
+                                                    <h2>
+                                                        Lập trình Nodejs (cập nhật 2022)
+                                                    </h2>
+                                                    <div>
+                            
+                                                        <p>
+                                                            Trực tuyến
+                                                        </p>
+                                            
+                                                        <p>
+                                                            5
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="car-item">
+                                        <a href="https://techmaster.vn/course-detail/ev5/javascript-can-ban-tong-hop-12-game-huyen-thoai">
+
+                                            <div class="card">
+                                                <div class="car-image">
+                                                    <img src="https://media.techmaster.vn/api/static/10194/bv7f8ms51coduae6ij60" alt="javascript">
+                                                </div>
+                                                <div class="card-content">
+                                                    <h2>
+                                                        Javascript căn bản - Tổng hợp 12 game huyền thoại
+                                                    </h2>
+                                                    <div>
+                            
+                                                        <p>
+                                                            Trực tuyến
+                                                        </p>
+                                            
+                                                        <p>
+                                                            5
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="car-item">
+                                        <a href="./main.html">
+
+                                            <div class="card">
+                                                <div class="car-image">
+                                                    <img src="https://media.techmaster.vn/api/static/bub3enc51co7s932dsk0/bKnWt9ab" alt="react native">
+                                                </div>
+                                                <div class="card-content">
+                                                    <h2>
+                                                        Lập trình di động đa nền tảng React Native Online (cập nhật 2022)
+                                                    </h2>
+                                                    <div>
+                            
+                                                        <p>
+                                                            Trực tuyến
+                                                        </p>
+                                            
+                                                        <p>
+                                                            5
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="row ">
+                <div class="col col1">
+                    <h2>CHỦ SỞ HỮU WEBSITE</h2>
+                    <a href="https://techmaster.vn/">Công ty TNHH TechMaster Vietnam Ltd </a>
+                    <p>Số ĐKDN: 0105392153 </p>
+                    <p>Ngày cấp: 4-7-2011 </p>
+                    <p>Nơi cấp: Sở kế hoạch - đầu tư Hà nội </p>
+                    <p>Người đại diện pháp luật: Trịnh Minh Cường </p>
+                </div>
+    
+                <div class="col col2">
+                    <h2>GIỚI THIỆU</h2>
+    
+                    <ul>
+                        <li>
+                            <a href="https://techmaster.vn/trungtam/trung-tam">Học viện CNTT TechMaster </a>
+                        </li>
+                        <li>
+                            <a href="https://techmaster.vn/trungtam/giang-vien">Giảng viên</a>
+                        </li>
+    
+                        <li>
+                            <a href="https://techmaster.vn/trungtam/quy-dinh-chung">Quy định</a>
+                        </li>
+    
+                        <li>
+                            <a href="https://techmaster.vn/trungtam/huong-dan-mua-khoa-hoc">Hướng dẫn mua khóa học</a>
+                        </li>
+    
+                        <li>
+                            <a href="https://techmaster.vn/trungtam/uu-dai-va-hoan-tra-hoc-phi">Ữu đãi và hoàn trả học phí</a>
+                        </li>
+    
+                        <li>
+                            <a href="https://techmaster.vn/trungtam/bao-ve-thong-tin-khach-hang">Bảo vệ thông tin khách hàng</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="col col3">
+                    <h2>TƯ VẤN TUYỂN SINH</h2>
+                    <ul class="contact">
+                        <li>
+                            <a href="tel:0382416368" target="_blank">Nguyễn Thanh Hương - 0382416368 </a>- <a href="mailto:huong@techmaster.vn" target="_blank">huong@techmaster.vn</a>
+                        </li>
+    
+                        <li>
+                            <a href="tel:0987273764" target="_blank">Dương Đức Thịnh - 0987273764 </a>
+                            - <a href="mailto:thinh@techmaster.vn" target="_blank">thinh@techmaster.vn</a>
+                        </li>
+    
+                        <li>   <a href="tel:0963023185" target="_blank">Phạm Thị Mẫn - 0963023185 </a>- <a href="mailto:phamman@techmaster.vn" target="_blank">phamman@techmaster.vn</a> 
+                        </li>
+                    </ul>
+    
+                    <h2>TƯ VẤN ĐÀO TẠO DOANH NGHIỆP</h2>
+                    <ul>
+                        <li>   <a href="tel:0987166619" target="_blank">Lại Thảo Vy - 0987166619 </a>- <a href="mailto:vy@techmaster.vn" target="_blank">vy@techmaster.vn</a> </li>
+                    </ul>
+                </div>
+                <div class="col col4">
+    
+                    <h2>ĐỊA CHỈ</h2>
+                    <ul>
+                        <li> <a href="https://g.page/TechmasterVN?share" target="_blank">Quận Hai Bà Trưng: 14 ngõ 4 Nguyễn Đình Chiểu </a>  </li>
+    
+                        <li> <a href="https://www.google.com/maps/place/Techmaster/@20.9980822,105.7942766,18.82z/data=!4m15!1m8!3m7!1s0x3135acba7ddb0f43:0xe7d7c05f85f830a!2zNDggUC4gVOG7kSBI4buvdSwgVHJ1bmcgVsSDbiwgVOG7qyBMacOqbSwgSMOgIE7hu5lpIDEwMDAw!3b1!8m2!3d20.9980103!4d105.7944382!16s%2Fg%2F11hl8fy8tx!3m5!1s0x3135ad5e6a49f693:0x13aeab8c73d00e0c!8m2!3d20.9980063!4d105.794338!16s%2Fg%2F11fjxww18p?hl=vi-VN" target="_blank">Quận Nam Từ Liêm: tầng 12A, Viwaseen Tower, 48 Tố Hữu </a>  </li>
+    
+                        <li> <a href="https://goo.gl/maps/JMy1becGYRL7qy9F9" target="_blank">Quận Cầu Giấy: tầng 5, 13 Dịch Vọng Hậu </a>  </li>
+                    </ul>
+    
+                    <div class="social">
+                        <ul class="social-link">
+                            <li>
+                                <a href="https://www.facebook.com/techmastervn/?fref=ts"><i class="fa-brands fa-square-facebook"></i></a>
+                                
+                            </li>
+        
+                            <li><a href="https://www.youtube.com/user/TechMasterVN"><i class="fa-brands fa-square-youtube"></i></a></li>
+                            <li><a href="https://github.com/arrowjs"><i class="fa-brands fa-square-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>           
+            </div>
+    
+        </div>
+</body>
+</html>
