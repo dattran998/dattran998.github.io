@@ -1,0 +1,27 @@
+.box {
+    width: 500px;
+    height: 500px;
+    background-color: tomato;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box i {
+    animation: scale 1s infinite;
+}
+
+@keyframes scale {
+    0%{
+        font-size: 30px;
+    }
+
+    50% {
+        font-size: 45px;
+    }
+
+    100% {
+        font-size: 60px;
+    }
+}

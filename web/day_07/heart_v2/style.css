@@ -1,0 +1,16 @@
+.box {
+    width: 500px;
+    height: 500px;
+    background-color: tomato;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.heart {
+    height: 60px;
+    width: 30px;
+    background-color: blue;
+    border-radius: 50%;
+}
