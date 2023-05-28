@@ -605,6 +605,7 @@ html {
     position: relative;
 }
 
+
 .prize h2,
 .company h2,
 .warranty h2,
@@ -829,6 +830,69 @@ html {
 }
 
 
+/* Slick */
+.slick-carousel img {
+    width: 500px;
+}
+.slick-slide {
+    transform: scale(0.8);
+    transition: all 0.75s ease-in-out;
+    padding: 50px 0;
+} 
+
+.slick-track img {
+    max-width: 100%;
+    transition: all 0.75s ease-in-out;
+}
+
+.slick-center {
+    transform: scale(1.05);
+} 
+
+.items {
+    margin: 0 -40px;
+    /* position: absolute; */
+}
+
+.reference {
+    margin: 0 148px 80px 148px;
+    background-color: #f1f4f6;
+    /* position: relative; */
+}
+
+.reference p {
+    margin: 0 16px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.reference h2 {
+    font-size: 32px;
+    color: #222;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+
+.slick-center .item-text a {
+    display: block;
+}
+
+.item-text a {
+    font-size: 15px;
+    color: #3088CE !important;
+    text-decoration: none;
+    margin-top: 20px;
+    display: none;
+    text-align: center;
+}
+
+.item-text a:hover {
+    text-decoration: underline;
+}
+
 /* Footer */
 .footer {
     color: #fff;
@@ -931,6 +995,9 @@ html {
     cursor: pointer;
     text-decoration: underline;
 }
+
+
+
 
 @keyframes fadeIn {
     0% {
