@@ -1,0 +1,98 @@
+User: Chứa thông tin chung về nhà tuyển dụng và người tìm việc làm
+Employer: Chứa thông tin riêng về nhà tuyển dụng
+JobSeeker: Chứa thông tin riêng về người tìm việc 
+Job: Chứa thông tin việc làm
+Application: Thông tin ứng tuyển
+FavoriteJob: THông tin Job yêu thích
+Feedback: Phản hồi và đánh giá
+Skill: Các kỹ năng của công việc
+
+User- Employer: 1 - 1
+User - JobSeeker: 1 -1 
+JobSeeker - JobSeeker_Skill: 1- N 
+JobSeeker - FavoriteJob: 1 - N 
+JobSeeker - Feedback: 1 - M
+JobSeeker - Notification: 1 - M
+JobSeeker - Application: 1 - M
+
+Employer- Job: 1 - M
+Employer - Application: 1 - M
+
+CÁc thông tin liên quan đến đối tượng:
+1. User
+- id
+- username
+- password
+- role ('job_seeker', 'employer')
+
+2. JobSeeker
+- id 
+- fullname
+- email
+- phone
+- address
+- contact
+- user_id (Khóa ngoại)
+
+3. Employer
+- id
+- name
+- email
+- phone
+- address
+- description
+- country
+- user_id (Khóa ngoại)
+
+4. Job
+- id
+- tittle
+- description
+- salary
+- created_at
+- update
+- published_at
+- expried_at
+- status
+- employer_id (Khóa ngoại)
+
+5. Application
+- id
+- job_seeker_id (khóa ngoại)
+- job_id (Khóa ngoại)
+- created_at
+- status ('pending', 'reject', 'accept')
+
+6. FavoriteJob
+- id 
+- job_seeker_id (Khóa ngoại)
+- job_id (Khóa ngoại)
+- created_at
+
+7. Feedback
+ - id
+- job_seeker_id (Khóa ngoại)
+- job_id (Khóa ngoiaj)
+content
+- rating
+- created_at
+- updated_at
+
+8. Skill
+-id
+- name
+
+9. Notification
+- id
+- tittle
+- content
+- created_at
+- updated_at
+- job_seeker_id (Khóa ngoại)
+- employer_id (Khóa ngoại)
+
+10. JobSeeker_Skill
+- id
+- job_seeker_id
+- skill_id
+-level ('beginner', 'master', 'expert')
