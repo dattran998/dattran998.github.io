@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSONPlaceholder API</title>
+    <style>
+        .active {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="posts-btn" class="active">Posts</li>
+        <li id="photos-btn">Photos</li>
+        <li id="albums-btn">Albums</li>
+    </ul>
+    <ul id="data-list"></ul>
+
+    <script>
+        const postsBtn = document.getElementById("posts-btn");
+        const photosBtn = document.getElementById("photos-btn");
+        const albumsBtn = document.getElementById("albums-btn");
+        const dataList = document.getElementById("data-list");
+
+        const postsUrl = "https://jsonplaceholder.typicode.com/posts";
+        const photosUrl = "https://jsonplaceholder.typicode.com/photos";
+        const albumsUrl = "https://jsonplaceholder.typicode.com/albums";
+
+        // Lấy dữ liệu từ API và hiển thị
+        function fetchData(url) {
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    dataList.innerHTML = ""; // Xóa dữ liệu cũ
+                    data.forEach(item => {
+                        const li = document.createElement("li");
+                        li.textContent = item.title;
+                        dataList.appendChild(li);
+                    });
+                });
+        }
+
+        // Gán sự kiện click cho các nút
+        postsBtn.addEventListener("click", () => {
+            postsBtn.classList.add("active");
+            photosBtn.classList.remove("active");
+            albumsBtn.classList.remove("active");
+            fetchData(postsUrl);
+        });
+
+        photosBtn.addEventListener("click", () => {
+            postsBtn.classList.remove("active");
+            photosBtn.classList.add("active");
+            albumsBtn.classList.remove("active");
+            fetchData(photosUrl);
+        });
+
+        albumsBtn.addEventListener("click", () => {
+            postsBtn.classList.remove("active");
+            photosBtn.classList.remove("active");
+            albumsBtn.classList.add("active");
+            fetchData(albumsUrl);
+        });
+
+        // Mặc định hiển thị danh sách posts
+        fetchData(postsUrl);
+    </script>
+</body>
+</html>
